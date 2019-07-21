@@ -1,0 +1,272 @@
+/*-----RESET STYLING-----*/
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/*------MY CODE STARTS HERE-------*/
+
+* {
+  font-family: "Archivo Narrow", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.flexContainer {
+  display: flex;
+  align-items: center;
+}
+
+.flexItem {
+  flex: 1;
+}
+
+.flexStart {
+  justify-content: flex-start;
+}
+.flexStart li {
+  padding: 1rem 0.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.flexEnd {
+  justify-content: flex-end;
+}
+
+.nav {
+  list-style: none;
+}
+.nav a {
+  text-decoration: none;
+  padding: 1em 0.25em;
+  color: #3a3939;
+}
+.flexEnd li {
+  padding: 1rem 0.5rem;
+  font-weight: 400;
+}
+
+.hero {
+  background-image: url("img/boardwalk.jpg");
+  height: calc(100vh - 100px);
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h2 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #dedee0;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+}
+
+#boxes {
+  display: flex;
+}
+
+.box {
+  display: inline-block;
+  padding: 5em;
+  background-color: #dbb8c1;
+  justify-content: space-between;
+  box-sizing: border-box;
+  flex: 1;
+  border: solid #a3a3a3 2px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.box a {
+  text-decoration: none;
+  padding: 15px;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+footer {
+  text-align: center;
+  padding: 0.5em 0;
+  height: 10px;
+  line-height: 10px;
+}
